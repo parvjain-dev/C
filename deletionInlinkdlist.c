@@ -69,7 +69,7 @@ struct Node *deleteNodeatvalue(struct Node *head, int value)
     //Here we are checking two things first this loop will run until our value will not get and second thing iff the value is not there in linked list then there is no use of it we put NULL condition also
     while (q->data != value && q->next != NULL)
     {
-        ptr = ptr->next;
+        ptr = ptr->next; 
         q = q->next;
     }
 
