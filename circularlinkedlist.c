@@ -16,7 +16,7 @@ void traverse(struct Node *head)
     do
     {
         printf("%d\n", p->data);
-        p = p->next;
+        p = p->next; 
     } while (p != head);
 }
 
@@ -65,8 +65,8 @@ struct Node * insertInbetween (struct Node * head , int index , int data){
        i++;
    }
    
-    p->next = ptr;
     ptr-> next = p->next;
+    p->next = ptr;
     return head;
 }
 
@@ -92,7 +92,7 @@ int main()
     printf("Linkedlist Without any insertion\n");
 
     traverse(head); 
-
+ 
 //     printf("Linkedlist after insertion at first\n");
 
 //    head = insertAt_first(head, 130);
@@ -102,7 +102,7 @@ int main()
 //     printf("Insertion at end\n");
 //     head = insertAtLast(head, 5);
 //     traverse(head);
-   printf("Linkedlist after insertion in between");
+   printf("Linkedlist after insertion in between\n");
     head = insertInbetween(head,2 , 15);
     traverse(head);
     return 0;

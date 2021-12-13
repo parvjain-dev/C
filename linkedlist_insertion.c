@@ -69,7 +69,7 @@ struct Node * insertAtend(struct Node * head , int data){
      ptr->next = NULL;
      return head ;
 }
-     
+      
 
 int main(int argc, char const *argv[])
 {
