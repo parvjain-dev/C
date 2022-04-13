@@ -19,7 +19,6 @@ void displaylist(struct Node *ptr)
 struct Node *deletionAtfirst(struct Node *head)
 {
     struct Node *ptr = head; //we created a pointer which points to a head of our first node
-
     head = head->next; // Now our head pointer (which is pointing to our first node ) is now pointing to nex t Node(first)
     free(ptr);         //here are free the memory of our deleted memory
     return head;

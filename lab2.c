@@ -1,30 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-int palindrome_check(char s[20], int left, int right){
-if(right-left == 1 || left==right){
-return 1;
-}
-else{
 
-if(s[left] == s[right])
-return palindrome_check(s, left+1, right-1);
-else
-return 0;
-}
-}
 int main(){
-char s[20];
-printf("Enter a number\n");
-scanf("%s", s);
-int n = strlen(s);
-if(palindrome_check(s, 0, n-1))
- {
- printf("Palindrome\n");
- }
- else
- {
- printf("Not a palindrome\n");
- }
+int a[] = {2,2,3,4,5}, *p;
+p =a;
+++*p;
+printf("%d\n" , *p);
+p +=2;
+printf("%d\n", *p);
  return 0;
 }
+

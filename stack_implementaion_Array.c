@@ -38,7 +38,7 @@ int isfull(struct stack *ptr)
     }
     else
     {
-        return 0;
+        return 0; 
     }
 }
 void push(struct stack *s, int data)
